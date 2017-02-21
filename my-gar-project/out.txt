@@ -1,0 +1,1033 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T12:29:23-05:00)
+Maven home: /opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5
+Java version: 1.8.0_121, vendor: Oracle Corporation
+Java home: /opt/java/jdk1.8.0_121/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.10.0-514.6.1.el7.x86_64", arch: "amd64", family: "unix"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/conf/settings.xml
+[DEBUG] Reading user settings from /home/oracle/.m2/settings.xml
+[DEBUG] Using local repository at /opt/archiva/apache-archiva-2.2.1/repositories/internal
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /opt/archiva/apache-archiva-2.2.1/repositories/internal
+[INFO] Scanning for projects...
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=79, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=32, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=23, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=883, DefaultDependencyCollector.transformTime=28}
+[DEBUG] com.oracle.coherence:gar-maven-plugin:jar:12.2.1-2-0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.2.5:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.0.M1:compile
+[DEBUG]          javax.enterprise:cdi-api:jar:1.0:compile
+[DEBUG]             javax.annotation:jsr250-api:jar:1.0:compile
+[DEBUG]             javax.inject:javax.inject:jar:1:compile
+[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0.M1:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.5.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.2.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.20:compile
+[DEBUG]    org.apache.maven:maven-compat:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.2.5:compile
+[DEBUG]             org.eclipse.aether:aether-spi:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-impl:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-api:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-util:jar:1.0.0.v20140518:compile
+[DEBUG]          org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3:compile
+[DEBUG]             aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]             com.google.guava:guava:jar:16.0.1:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.21:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.8:compile
+[DEBUG]    com.oracle.coherence:coherence:jar:12.2.1-2-0:compile
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created new class realm extension>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG] Importing foreign packages into class realm extension>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm extension>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG]   Included: com.oracle.coherence:gar-maven-plugin:jar:12.2.1-2-0
+[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
+[DEBUG]   Included: javax.annotation:jsr250-api:jar:1.0
+[DEBUG]   Included: javax.inject:javax.inject:jar:1
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0.M1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:1.0.0.v20140518
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: com.google.guava:guava:jar:16.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.21
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: com.oracle.coherence:coherence:jar:12.2.1-2-0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG] Extension realms for project org.mycompany:my-gar-project:gar:1.0-SNAPSHOT: [ClassRealm[extension>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0, parent: sun.misc.Launcher$AppClassLoader@55f96302]]
+[DEBUG] Created new class realm project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Looking up lifecyle mappings for packaging gar from ClassRealm[project>org.mycompany:my-gar-project:1.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.mycompany:my-gar-project:gar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [package]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building my-gar-project 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-resources-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-resources-plugin/maven-metadata.xml in local (/opt/archiva/apache-archiva-2.2.1/repositories/internal)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-resources-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-resources-plugin to 3.0.2 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-compiler-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-compiler-plugin/maven-metadata.xml in local (/opt/archiva/apache-archiva-2.2.1/repositories/internal)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-compiler-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-compiler-plugin to 3.6.1 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-surefire-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-surefire-plugin/maven-metadata.xml in local (/opt/archiva/apache-archiva-2.2.1/repositories/internal)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-surefire-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-surefire-plugin to 2.19.1 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-install-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-install-plugin/maven-metadata.xml in local (/opt/archiva/apache-archiva-2.2.1/repositories/internal)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-install-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-install-plugin to 2.5.2 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-deploy-plugin
+[DEBUG] Could not find metadata org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml in local (/opt/archiva/apache-archiva-2.2.1/repositories/internal)
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-deploy-plugin to 2.8.2 from repository central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, compile+runtime, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:generate-descriptor (default-generate-descriptor)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration/>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.6.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <shutdown default-value="testset">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:package (default-package)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.6:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classifier default-value="">${maven.jar.classifier}</classifier>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">true</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:repackage (default-repackage)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <generatePof default-value="false"/>
+  <project default-value="${project}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Failure to find com.oracle.coherence:coherence/maven-metadata.xml in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=8, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.mycompany:my-gar-project:gar:1.0-SNAPSHOT
+[DEBUG]    com.oracle.coherence:coherence:jar:12.2.1-2-0:provided
+[DEBUG]    workspace:coh-client:jar:1.0-SNAPSHOT:provided
+[INFO] 
+[INFO] --- gar-maven-plugin:12.2.1-2-0:generate-descriptor (default-generate-descriptor) @ my-gar-project ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=79, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=32, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6, ConflictResolver.conflictItemCount=78, DefaultDependencyCollector.collectTime=35, DefaultDependencyCollector.transformTime=7}
+[DEBUG] com.oracle.coherence:gar-maven-plugin:jar:12.2.1-2-0:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.2.5:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.0.M1:compile
+[DEBUG]          javax.enterprise:cdi-api:jar:1.0:compile
+[DEBUG]             javax.annotation:jsr250-api:jar:1.0:compile
+[DEBUG]             javax.inject:javax.inject:jar:1:compile
+[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0.M1:compile
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.5.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.2.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.20:compile
+[DEBUG]    org.apache.maven:maven-compat:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.2.5:compile
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.2.5:compile
+[DEBUG]             org.eclipse.aether:aether-spi:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-impl:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-api:jar:1.0.0.v20140518:compile
+[DEBUG]          org.eclipse.aether:aether-util:jar:1.0.0.v20140518:compile
+[DEBUG]          org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3:compile
+[DEBUG]             aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]             com.google.guava:guava:jar:16.0.1:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.21:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.apache.maven.wagon:wagon-provider-api:jar:2.8:compile
+[DEBUG]    com.oracle.coherence:coherence:jar:12.2.1-2-0:compile
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG] Created new class realm plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG] Importing foreign packages into class realm plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG]   Imported:  < project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0
+[DEBUG]   Included: com.oracle.coherence:gar-maven-plugin:jar:12.2.1-2-0
+[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
+[DEBUG]   Included: javax.annotation:jsr250-api:jar:1.0
+[DEBUG]   Included: javax.inject:javax.inject:jar:1
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0.M1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:1.0.0.v20140518
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: com.google.guava:guava:jar:16.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.21
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: com.oracle.coherence:coherence:jar:12.2.1-2-0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.2.5
+[DEBUG]   Excluded: org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.0.M1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.5.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-compat:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.2.5
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.2.5
+[DEBUG]   Excluded: org.eclipse.aether:aether-spi:jar:1.0.0.v20140518
+[DEBUG]   Excluded: org.eclipse.aether:aether-impl:jar:1.0.0.v20140518
+[DEBUG]   Excluded: org.eclipse.aether:aether-api:jar:1.0.0.v20140518
+[DEBUG]   Excluded: org.apache.maven.wagon:wagon-provider-api:jar:2.8
+[DEBUG] Configuring mojo com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:generate-descriptor from plugin realm ClassRealm[plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:generate-descriptor' with basic configurator -->
+[DEBUG] -- end configuration --
+[INFO] Generate the GridARchive descriptor
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ my-gar-project ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=68, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16, ConflictResolver.conflictItemCount=67, DefaultDependencyCollector.collectTime=270, DefaultDependencyCollector.transformTime=17}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.0.2:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.6:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.24:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.1.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.0.0:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG]   Imported:  < project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.0.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.6
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.24
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.1.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.0.0
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.0.2:resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SELINUX_USE_CURRENT_RANGE=, env.LESSOPEN=||/usr/bin/lesspipe.sh %s, env.ORACLE_HOME=/opt/oracle/middleware/soa_qs, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, sun.boot.class.path=/opt/java/jdk1.8.0_121/jre/lib/resources.jar:/opt/java/jdk1.8.0_121/jre/lib/rt.jar:/opt/java/jdk1.8.0_121/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_121/jre/lib/jsse.jar:/opt/java/jdk1.8.0_121/jre/lib/jce.jar:/opt/java/jdk1.8.0_121/jre/lib/charsets.jar:/opt/java/jdk1.8.0_121/jre/lib/jfr.jar:/opt/java/jdk1.8.0_121/jre/classes, env.PWD=/opt/oracle/jdeveloper/mywork/workspace/my-gar-project, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_121-b13, env.ARCHIVA_HOME=/opt/archiva/apache-archiva-2.2.1, env.HISTSIZE=1000, env.DISPLAY=localhost:12.0, user.name=oracle, maven.build.version=Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T12:29:23-05:00), env.USER=oracle, env.HISTCONTROL=ignoredups, env.SHELL=/bin/bash, env.SSH_TTY=/dev/pts/2, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/bin:/opt/archiva/apache-archiva-2.2.1/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/oracle/.local/bin:/home/oracle/bin, user.language=en, sun.boot.library.path=/opt/java/jdk1.8.0_121/jre/lib/amd64, classworlds.conf=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/bin/m2.conf, env.SSH_CONNECTION=192.168.56.1 50291 192.168.56.102 22, java.version=1.8.0_121, env.SSH_CLIENT=192.168.56.1 50291 22, user.timezone=America/New_York, project.baseUri=file:/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/, maven.build.timestamp=2017-02-09T14:40:15Z, sun.arch.data.model=64, env.SELINUX_ROLE_REQUESTED=, java.endorsed.dirs=/opt/java/jdk1.8.0_121/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, env.HOSTNAME=localhost.localdomain, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, env.JDEV_USER_DIR=/opt/oracle/jdeveloper/, user.country=US, java.home=/opt/java/jdk1.8.0_121/jre, java.vm.info=mixed mode, env.LOGNAME=oracle, os.version=3.10.0-514.6.1.el7.x86_64, path.separator=:, java.vm.version=25.121-b13, env.JAVA_HOME=/opt/java/jdk1.8.0_121/, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/oracle, java.specification.vendor=Oracle Corporation, env.M2_HOME=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS=package -X, java.vm.vendor=Oracle Corporation, env.M2_REPO=/opt/archiva/apache-archiva-2.2.1/repositories/internal, maven.home=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher package -X, java.class.path=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/boot/plexus-classworlds-2.5.2.jar, env.XDG_SESSION_ID=163, maven.version=3.2.5, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.os.patch.level=unknown, sun.cpu.endian=little, env.HOME=/home/oracle, java.io.tmpdir=/tmp, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, os.arch=amd64, env.XDG_RUNTIME_DIR=/run/user/1000, java.ext.dirs=/opt/java/jdk1.8.0_121/jre/lib/ext:/usr/java/packages/lib/ext, user.dir=/opt/oracle/jdeveloper/mywork/workspace/my-gar-project, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.SELINUX_LEVEL_REQUESTED=, file.encoding=UTF-8, env.MAIL=/var/spool/mail/oracle, java.specification.version=1.8}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 3 resources
+[DEBUG] Copying file META-INF/cache-config.xml
+[DEBUG] file cache-config.xml has a filtered file extension
+[DEBUG] copy /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/resources/META-INF/cache-config.xml to /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes/META-INF/cache-config.xml
+[DEBUG] Copying file META-INF/coherence-application.xml
+[DEBUG] file coherence-application.xml has a filtered file extension
+[DEBUG] copy /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/resources/META-INF/coherence-application.xml to /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes/META-INF/coherence-application.xml
+[DEBUG] Copying file META-INF/pof-config.xml
+[DEBUG] file pof-config.xml has a filtered file extension
+[DEBUG] copy /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/resources/META-INF/pof-config.xml to /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes/META-INF/pof-config.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ my-gar-project ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=117, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=44, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=71, DefaultDependencyCollector.collectTime=242, DefaultDependencyCollector.transformTime=3}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.6.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.6:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.1.0:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.ow2.asm:asm:jar:6.0_ALPHA:compile
+[DEBUG]    com.thoughtworks.qdox:qdox:jar:2.0-M5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.1:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.6.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.6.1
+[DEBUG]   Imported:  < project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.6.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.6.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.6
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.0_ALPHA
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.6.1, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project
+[DEBUG]   (f) buildDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target
+[DEBUG]   (f) compilePath = [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes, /opt/archiva/apache-archiva-2.2.1/repositories/internal/com/oracle/coherence/coherence/12.2.1-2-0/coherence-12.2.1-2-0.jar, /opt/archiva/apache-archiva-2.2.1/repositories/internal/workspace/coh-client/1.0-SNAPSHOT/coh-client-1.0-SNAPSHOT.jar]
+[DEBUG]   (f) compileSourceRoots = [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (f) projectArtifact = org.mycompany:my-gar-project:gar:1.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/generated-sources/annotations to compile source roots:
+  /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/java
+[DEBUG] New compile source roots:
+  /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/main/java
+  /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] classpathElements: [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes, /opt/archiva/apache-archiva-2.2.1/repositories/internal/com/oracle/coherence/coherence/12.2.1-2-0/coherence-12.2.1-2-0.jar, /opt/archiva/apache-archiva-2.2.1/repositories/internal/workspace/coh-client/1.0-SNAPSHOT/coh-client-1.0-SNAPSHOT.jar]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ my-gar-project ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.0.2, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.0.2:testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SELINUX_USE_CURRENT_RANGE=, env.LESSOPEN=||/usr/bin/lesspipe.sh %s, env.ORACLE_HOME=/opt/oracle/middleware/soa_qs, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Linux, sun.boot.class.path=/opt/java/jdk1.8.0_121/jre/lib/resources.jar:/opt/java/jdk1.8.0_121/jre/lib/rt.jar:/opt/java/jdk1.8.0_121/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_121/jre/lib/jsse.jar:/opt/java/jdk1.8.0_121/jre/lib/jce.jar:/opt/java/jdk1.8.0_121/jre/lib/charsets.jar:/opt/java/jdk1.8.0_121/jre/lib/jfr.jar:/opt/java/jdk1.8.0_121/jre/classes, env.PWD=/opt/oracle/jdeveloper/mywork/workspace/my-gar-project, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_121-b13, env.ARCHIVA_HOME=/opt/archiva/apache-archiva-2.2.1, env.HISTSIZE=1000, env.DISPLAY=localhost:12.0, user.name=oracle, maven.build.version=Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T12:29:23-05:00), env.USER=oracle, env.HISTCONTROL=ignoredups, env.SHELL=/bin/bash, env.SSH_TTY=/dev/pts/2, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/bin:/opt/archiva/apache-archiva-2.2.1/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/home/oracle/.local/bin:/home/oracle/bin, user.language=en, sun.boot.library.path=/opt/java/jdk1.8.0_121/jre/lib/amd64, classworlds.conf=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/bin/m2.conf, env.SSH_CONNECTION=192.168.56.1 50291 192.168.56.102 22, java.version=1.8.0_121, env.SSH_CLIENT=192.168.56.1 50291 22, user.timezone=America/New_York, project.baseUri=file:/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/, maven.build.timestamp=2017-02-09T14:40:15Z, sun.arch.data.model=64, env.SELINUX_ROLE_REQUESTED=, java.endorsed.dirs=/opt/java/jdk1.8.0_121/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, env.HOSTNAME=localhost.localdomain, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, env.JDEV_USER_DIR=/opt/oracle/jdeveloper/, user.country=US, java.home=/opt/java/jdk1.8.0_121/jre, java.vm.info=mixed mode, env.LOGNAME=oracle, os.version=3.10.0-514.6.1.el7.x86_64, path.separator=:, java.vm.version=25.121-b13, env.JAVA_HOME=/opt/java/jdk1.8.0_121/, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/oracle, java.specification.vendor=Oracle Corporation, env.M2_HOME=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS=package -X, java.vm.vendor=Oracle Corporation, env.M2_REPO=/opt/archiva/apache-archiva-2.2.1/repositories/internal, maven.home=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher package -X, java.class.path=/opt/oracle/middleware/soa_qs/oracle_common/modules/org.apache.maven_3.2.5/boot/plexus-classworlds-2.5.2.jar, env.XDG_SESSION_ID=163, maven.version=3.2.5, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.os.patch.level=unknown, sun.cpu.endian=little, env.HOME=/home/oracle, java.io.tmpdir=/tmp, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, os.arch=amd64, env.XDG_RUNTIME_DIR=/run/user/1000, java.ext.dirs=/opt/java/jdk1.8.0_121/jre/lib/ext:/usr/java/packages/lib/ext, user.dir=/opt/oracle/jdeveloper/mywork/workspace/my-gar-project, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.SELINUX_LEVEL_REQUESTED=, file.encoding=UTF-8, env.MAIL=/var/spool/mail/oracle, java.specification.version=1.8}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/test/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ my-gar-project ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.6.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.6.1, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.6.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project
+[DEBUG]   (f) buildDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target
+[DEBUG]   (f) compilePath = [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes, /opt/archiva/apache-archiva-2.2.1/repositories/internal/com/oracle/coherence/coherence/12.2.1-2-0/coherence-12.2.1-2-0.jar, /opt/archiva/apache-archiva-2.2.1/repositories/internal/workspace/coh-client/1.0-SNAPSHOT/coh-client-1.0-SNAPSHOT.jar]
+[DEBUG]   (f) compileSourceRoots = [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.6.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/test-classes
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) testPath = [/opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/test-classes, /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes, /opt/archiva/apache-archiva-2.2.1/repositories/internal/com/oracle/coherence/coherence/12.2.1-2-0/coherence-12.2.1-2-0.jar, /opt/archiva/apache-archiva-2.2.1/repositories/internal/workspace/coh-client/1.0-SNAPSHOT/coh-client-1.0-SNAPSHOT.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ my-gar-project ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=114, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=21, ConflictResolver.conflictItemCount=80, DefaultDependencyCollector.collectTime=117, DefaultDependencyCollector.transformTime=22}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.19.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.19.1:compile
+[DEBUG]       org.apache.maven.surefire:surefire-booter:jar:2.19.1:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-utils:jar:1.5.15:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]             junit:junit:jar:4.12:compile
+[DEBUG]                org.hamcrest:hamcrest-core:jar:1.3:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]             backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]          org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]             org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]    org.apache.maven.surefire:surefire-api:jar:2.19.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG]   Imported:  < project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.19.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.15
+[DEBUG]   Included: junit:junit:jar:4.12
+[DEBUG]   Included: org.hamcrest:hamcrest-core:jar:1.3
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.19.1
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.2.1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:2.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.19.1, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test' with basic configurator -->
+[DEBUG]   (s) additionalClasspathElements = []
+[DEBUG]   (s) basedir = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes
+[DEBUG]   (s) classpathDependencyExcludes = []
+[DEBUG]   (s) dependenciesToScan = []
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (f) forkCount = 1
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///opt/archiva/apache-archiva-2.2.1/repositories/internal/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) parallelOptimized = true
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.19.1:, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.19.1:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.19.1:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:1.5.15:compile, junit:junit=junit:junit:jar:4.12:compile, org.hamcrest:hamcrest-core=org.hamcrest:hamcrest-core:jar:1.3:compile, backport-util-concurrent:backport-util-concurrent=backport-util-concurrent:backport-util-concurrent:jar:3.1:compile, org.codehaus.plexus:plexus-interpolation=org.codehaus.plexus:plexus-interpolation:jar:1.11:compile, org.slf4j:slf4j-jdk14=org.slf4j:slf4j-jdk14:jar:1.5.6:runtime, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.5.6:runtime, org.slf4j:jcl-over-slf4j=org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile, org.sonatype.plexus:plexus-sec-dispatcher=org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher=org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.19.1:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.3:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {com.oracle.coherence:coherence=com.oracle.coherence:coherence:jar:12.2.1-2-0:provided, workspace:coh-client=workspace:coh-client:jar:1.0-SNAPSHOT:provided}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/surefire-reports
+[DEBUG]   (f) rerunFailingTestsCount = 0
+[DEBUG]   (f) reuseForks = true
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (f) shutdown = testset
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) skipAfterFailureCount = 0
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) suiteXmlFiles = []
+[DEBUG]   (s) testClassesDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/src/test/java
+[DEBUG]   (s) threadCountClasses = 0
+[DEBUG]   (s) threadCountMethods = 0
+[DEBUG]   (s) threadCountSuites = 0
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project
+[DEBUG]   (s) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG] -- end configuration --
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- gar-maven-plugin:12.2.1-2-0:package (default-package) @ my-gar-project ---
+[DEBUG] Configuring mojo com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:package from plugin realm ClassRealm[plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:package' with basic configurator -->
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ my-gar-project ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=94, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=86, DefaultDependencyCollector.collectTime=109, DefaultDependencyCollector.transformTime=2}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.2.1:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.1:compile
+[DEBUG]          org.apache.maven.doxia:doxia-logging-api:jar:1.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.6:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:0.7:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.20:runtime
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.4:compile
+[DEBUG]          commons-io:commons-io:jar:2.2:compile
+[DEBUG]       org.apache.commons:commons-compress:jar:1.9:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.6
+[DEBUG]   Imported:  < project>org.mycompany:my-gar-project:1.0-SNAPSHOT
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.6
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.2.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.1
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.6
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.7
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.20
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.9
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.2.1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.6:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.6:jar' with basic configurator -->
+[DEBUG]   (f) classesDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes
+[DEBUG]   (f) defaultManifestFile = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/classes/META-INF/MANIFEST.MF
+[DEBUG]   (f) finalName = my-gar-project-1.0-SNAPSHOT
+[DEBUG]   (f) forceCreation = true
+[DEBUG]   (f) outputDirectory = /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@69f63d95
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[INFO] Building jar: /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/target/my-gar-project-1.0-SNAPSHOT.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding entry META-INF/cache-config.xml
+[DEBUG] adding entry META-INF/coherence-application.xml
+[DEBUG] adding entry META-INF/pof-config.xml
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/org.mycompany/
+[DEBUG] adding directory META-INF/maven/org.mycompany/my-gar-project/
+[DEBUG] adding entry META-INF/maven/org.mycompany/my-gar-project/pom.xml
+[DEBUG] adding entry META-INF/maven/org.mycompany/my-gar-project/pom.properties
+[INFO] 
+[INFO] --- gar-maven-plugin:12.2.1-2-0:repackage (default-repackage) @ my-gar-project ---
+[DEBUG] Configuring mojo com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:repackage from plugin realm ClassRealm[plugin>com.oracle.coherence:gar-maven-plugin:12.2.1-2-0, parent: sun.misc.Launcher$AppClassLoader@55f96302]
+[DEBUG] Configuring mojo 'com.oracle.coherence:gar-maven-plugin:12.2.1-2-0:repackage' with basic configurator -->
+[DEBUG]   (f) generatePof = false
+[DEBUG]   (f) project = MavenProject: org.mycompany:my-gar-project:1.0-SNAPSHOT @ /opt/oracle/jdeveloper/mywork/workspace/my-gar-project/pom.xml
+[DEBUG] -- end configuration --
+[INFO] Skipping POF config generation
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.642 s
+[INFO] Finished at: 2017-02-09T09:40:16-05:00
+[INFO] Final Memory: 14M/119M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cache-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://xmlns.oracle.com/coherence/coherence-cache-config"
+              xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-cache-config http://xmlns.oracle.com/coherence/coherence-cache-config/1.2/coherence-cache-config.xsd">
+  <defaults>
+    <scope-name>gopal-server-1.0-SNAPSHOT</scope-name>
+    <serializer>pof</serializer>
+  </defaults>
+  <caching-scheme-mapping>
+    <cache-mapping>
+      <cache-name>STSAccFab</cache-name>
+      <scheme-name>cssaccfab-near-distributed</scheme-name>
+    </cache-mapping>
+    <cache-mapping>
+      <cache-name>STSProdMain</cache-name>
+      <scheme-name>prodmain-near-distributed</scheme-name>
+    </cache-mapping>
+    <cache-mapping>
+      <cache-name>STSProdFixedIncome</cache-name>
+      <scheme-name>prodfi-near-distributed</scheme-name>
+    </cache-mapping>
+    <cache-mapping>
+      <cache-name>STSNoTransFeeLkup</cache-name>
+      <scheme-name>ntf-near-distributed</scheme-name>
+    </cache-mapping>
+  </caching-scheme-mapping>
+  <caching-schemes>
+    <!-- Define a near scheme -->
+    <near-scheme>
+      <scheme-name>cssaccfab-near-distributed</scheme-name>
+      <front-scheme>
+        <local-scheme>
+          <high-units>20000</high-units>
+        </local-scheme>
+      </front-scheme>
+      <back-scheme>
+        <distributed-scheme>
+          <scheme-ref>cssaccfab-local-distributed</scheme-ref>
+        </distributed-scheme>
+      </back-scheme>
+      <invalidation-strategy>present</invalidation-strategy>
+    </near-scheme>
+    <distributed-scheme>
+      <scheme-name>cssaccfab-local-distributed</scheme-name>
+      <service-name>TradingService</service-name>
+      <thread-count>10</thread-count>
+      <backing-map-scheme>
+        <local-scheme>
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+    <near-scheme>
+      <scheme-name>ntf-near-distributed</scheme-name>
+      <front-scheme>
+        <local-scheme>
+          <high-units>20000</high-units>
+        </local-scheme>
+      </front-scheme>
+      <back-scheme>
+        <distributed-scheme>
+          <!-- use proxy-distributed to connect via Extend, use local-distributed to connect via TCMP -->
+          <scheme-ref>ntf-local-distributed</scheme-ref>
+        </distributed-scheme>
+      </back-scheme>
+      <invalidation-strategy>present</invalidation-strategy>
+    </near-scheme>
+    <distributed-scheme>
+      <scheme-name>ntf-local-distributed</scheme-name>
+      <!-- pass in fully qualified service name if client wants to join the Coherence app tier -->
+      <service-name>TradingService</service-name>
+      <thread-count>10</thread-count>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 1500MB - increased this from 32MB due to large size of CssAccFab cache -->
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+    <near-scheme>
+      <scheme-name>prodmain-near-distributed</scheme-name>
+      <front-scheme>
+        <local-scheme>
+          <high-units>20000</high-units>
+        </local-scheme>
+      </front-scheme>
+      <back-scheme>
+        <distributed-scheme>
+          <!-- use proxy-distributed to connect via Extend, use local-distributed to connect via TCMP -->
+          <scheme-ref>prodmain-local-distributed</scheme-ref>
+        </distributed-scheme>
+      </back-scheme>
+      <invalidation-strategy>present</invalidation-strategy>
+    </near-scheme>
+    <distributed-scheme>
+      <scheme-name>prodmain-local-distributed</scheme-name>
+      <!-- pass in fully qualified service name if client wants to join the Coherence app tier -->
+      <service-name>TradingService</service-name>
+      <thread-count>10</thread-count>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 1500MB - increased this from 32MB due to large size of CssAccFab cache -->
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+    <near-scheme>
+      <scheme-name>prodfi-near-distributed</scheme-name>
+      <front-scheme>
+        <local-scheme>
+          <high-units>20000</high-units>
+        </local-scheme>
+      </front-scheme>
+      <back-scheme>
+        <distributed-scheme>
+          <!-- use proxy-distributed to connect via Extend, use local-distributed to connect via TCMP -->
+          <scheme-ref>prodfi-local-distributed</scheme-ref>
+        </distributed-scheme>
+      </back-scheme>
+      <invalidation-strategy>present</invalidation-strategy>
+    </near-scheme>
+    <distributed-scheme>
+      <scheme-name>prodfi-local-distributed</scheme-name>
+      <!-- pass in fully qualified service name if client wants to join the Coherence app tier -->
+      <service-name>TradingService</service-name>
+      <thread-count>10</thread-count>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 1500MB - increased this from 32MB due to large size of CssAccFab cache -->
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+  </caching-schemes>
+</cache-config>
+

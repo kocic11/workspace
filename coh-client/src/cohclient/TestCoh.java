@@ -36,16 +36,6 @@ public class TestCoh {
     }
   }
 
-  //  private void putPof(String key, Pojo value) {
-  //    NamedCache cache = CacheFactory.getCache("ClientonboardingPof-1");
-  //    Map<String, Pojo> values = new HashMap<String, Pojo>();
-  //    values.put(key, value);
-  //    long start = System.currentTimeMillis();
-  //    cache.putAll(values);
-  //    long time = System.currentTimeMillis() - start;
-  //    System.out.println("Time to put POF string: " + time);
-  //  }
-
   private void putAllJava(int size) {
     PojoJava value = new PojoJava(str, 1L, 1, 2, 3);
     putAll(size, value, "ClientonboardingJava-1");
@@ -80,59 +70,4 @@ public class TestCoh {
     System.out.println("Time to put POF object(s): " + time);
   }
 
-  //
-  //  private void putJava(String key, PojoJava value) {
-  //    NamedCache cache = CacheFactory.getCache("ClientonboardingJava-1");
-  //    Map<String, PojoJava> values = new HashMap<String, PojoJava>();
-  //    values.put(key, value);
-  //    long start = System.currentTimeMillis();
-  //    cache.putAll(values);
-  //    long time = System.currentTimeMillis() - start;
-  //    System.out.println("Time to put Java string: " + time);
-  //  }
-  //
-  //  private Object getPof(String key) {
-  //    NamedCache cache = CacheFactory.getCache("ClientonboardingPof-1");
-  //    return cache.get(key);
-  //  }
-  //
-  //  private Object getJava(String key) {
-  //    NamedCache cache = CacheFactory.getCache("ClientonboardingJava-1");
-  //    return cache.get(key);
-  //  }
-  //
-  //  private void testJava(int size) {
-  //    char[] value = getValue(size);
-  //    putJava("key2", new PojoJava(new String(value)));
-  //    getJava("key2");
-  //    System.out.println("Received value.");
-  //  }
-  //
-  //  private void testJava() {
-  //    putJava("key2", new PojoJava("qwertyuiop", 1L, 1, 2, 3));
-  //    getJava("key2");
-  //    System.out.println("Received value.");
-  //  }
-  //
-  //  private void testPof(int size) {
-  //    char[] value = getValue(size);
-  //    putPof("key1", new Pojo(new String(value)));
-  //    System.out.println(getPof("key1"));
-  //  }
-  //
-  //  private void testPof() {
-  //    Map<String, Pojo> map = new HashMap<String, Pojo>();
-  //
-  //    putPof("key1", new Pojo("qwertyuiop", 1L, 1, 2, 3));
-  //    getPof("key1");
-  //    System.out.println("Received value.");
-  //  }
-  //
-  //  private char[] getValue(int size) {
-  //    char[] value = new char[size];
-  //    for (int i = 0; i < size; i++) {
-  //      value[i] = (char) i;
-  //    }
-  //    return value;
-  //  }
 }
