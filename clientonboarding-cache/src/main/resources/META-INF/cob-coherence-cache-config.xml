@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<cache-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://xmlns.oracle.com/coherence/coherence-cache-config"
+              xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-cache-config http://xmlns.oracle.com/coherence/coherence-cache-config/1.2/coherence-cache-config.xsd">
+  <caching-scheme-mapping>
+    <cache-mapping>
+      <cache-name>ClientonboardingPof-*</cache-name>
+      <scheme-name>pof-distributed</scheme-name>
+    </cache-mapping>
+    <cache-mapping>
+      <cache-name>ClientonboardingJava-*</cache-name>
+      <scheme-name>java-distributed</scheme-name>
+    </cache-mapping>
+  </caching-scheme-mapping>
+  <caching-schemes>
+    <!--     Distributed caching scheme.     -->
+    <distributed-scheme>
+      <scheme-name>pof-distributed</scheme-name>
+      <service-name>ClientonboardingPofCache</service-name>
+      <serializer>
+          <instance>
+          <class-name>com.tangosol.io.pof.ConfigurablePofContext</class-name>
+          <init-params>
+            <init-param>
+              <param-type>string</param-type>
+              <param-value>META-INF/cob-pof-config.xml</param-value>
+            </init-param>
+          </init-params>
+        </instance>
+          </serializer>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 32MB -->
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+    <distributed-scheme>
+      <scheme-name>java-distributed</scheme-name>
+      <service-name>ClientonboardingJavaCache</service-name>
+      <backing-map-scheme>
+        <local-scheme>
+          <!-- each node will be limited to 32MB -->
+          <high-units>32M</high-units>
+          <unit-calculator>binary</unit-calculator>
+        </local-scheme>
+      </backing-map-scheme>
+      <autostart>true</autostart>
+    </distributed-scheme>
+    <proxy-scheme>
+      <scheme-name>pof-proxy</scheme-name>
+      <service-name>ExtendTcpProxyPofService</service-name>
+      <acceptor-config>
+        <tcp-acceptor>
+          <local-address>
+            <address>localhost.localdomain</address>
+            <port>7177</port>
+          </local-address>
+        </tcp-acceptor>
+        <serializer>pof</serializer>
+      </acceptor-config>
+      <autostart system-property="proxy.start">false</autostart>
+    </proxy-scheme>
+    <proxy-scheme>
+      <scheme-name>java-proxy</scheme-name>
+      <service-name>ExtendTcpProxyJavaService</service-name>
+      <acceptor-config>
+        <tcp-acceptor>
+          <local-address>
+            <address>localhost.localdomain</address>
+            <port>7077</port>
+          </local-address>
+        </tcp-acceptor>
+        <serializer>java</serializer>
+      </acceptor-config>
+      <autostart system-property="proxy.start">false</autostart>
+    </proxy-scheme>
+  </caching-schemes>
+</cache-config>

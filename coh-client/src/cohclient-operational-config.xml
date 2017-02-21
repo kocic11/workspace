@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<coherence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-operational-config http://xmlns.oracle.com/coherence/coherence-operational-config/1.2/coherence-operational-config.xsd"
+           xmlns="http://xmlns.oracle.com/coherence/coherence-operational-config">
+  <security-config>
+    <identity-transformer>
+      <class-name>cohclient.IdentityTransformer</class-name>
+    </identity-transformer>
+  </security-config>
+</coherence>
