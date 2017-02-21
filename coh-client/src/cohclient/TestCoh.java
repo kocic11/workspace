@@ -30,7 +30,7 @@ public class TestCoh {
       System.setProperty("tangosol.pof.config", "cob-pof-config.xml");
       System.out.println("Running POF serialization.");
       testCoh.putAllPof(size);
-      break;
+      break; 
     default:
       System.out.println("Usage: java TestCoh java|pof <size>");
     }
