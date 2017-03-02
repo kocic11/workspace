@@ -49,20 +49,15 @@ public class JmxClient {
 
     MBeanServerConnection mBeanServerConnection = jmxc.getMBeanServerConnection();
     System.out.println("Invoking resetStatistics() method on:");
-    String name = new StringBuffer("Coherence:type=*,name=").append("\"")
-                                                            .append(appName)
-                                                            .append(":*\",*")
-                                                            .toString();
+    jmxClient.resetStatistics(mBeanServerConnection, new StringBuffer("Coherence:type=*,name=").append("\"")
+                                                                                               .append(appName)
+                                                                                               .append(":*\",*")
+                                                                                               .toString());
 
-    jmxClient.resetStatistics(mBeanServerConnection, name);
-    
-    name = new StringBuffer("Coherence:type=*,service=").append("\"")
-                                                                .append(appName)
-                                                                .append(":*\",*")
-                                                                .toString();
-    
-    jmxClient.resetStatistics(mBeanServerConnection, name);
-
+    jmxClient.resetStatistics(mBeanServerConnection, new StringBuffer("Coherence:type=*,service=").append("\"")
+                                                                                                  .append(appName)
+                                                                                                  .append(":*\",*")
+                                                                                                  .toString());
   }
 
   private Properties getPropValues(String fileName) throws Exception {
@@ -83,32 +78,19 @@ public class JmxClient {
   }
 
   private void resetStatistics(MBeanServerConnection mBeanServerConnection, String name) throws IOException,
-                                                                                                       MalformedObjectNameException {
+                                                                                                MalformedObjectNameException {
     ObjectName serviceInfo = ObjectName.getInstance(name);
     Set<ObjectName> names = mBeanServerConnection.queryNames(serviceInfo, null);
     if (names == null || names.isEmpty()) {
       throw new RuntimeException("No services found.");
     }
-    
+
     for (ObjectName mBeanName : names) {
-      boolean running = false;
-      String type = null;
       try {
         System.out.println(mBeanName);
         mBeanServerConnection.invoke(mBeanName, "resetStatistics", null, null);
-
-//        type = (String) mBeanServerConnection.getAttribute(mBeanName, "Type");
-//        running = (Boolean) mBeanServerConnection.getAttribute(mBeanName, "Running");
-//        System.out.println(mBeanName + ", Type  = " + type + ", Running = " + running);
-//        System.out.println(mBeanName + ", Running = " + running);
       } catch (Exception e) {
       }
-
-
-      //      if (!running) {
-      //        throw new RuntimeException(mBeanName + " is not running");
-      //      }
-
     }
   }
 }
