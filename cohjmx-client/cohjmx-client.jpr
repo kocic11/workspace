@@ -105,7 +105,7 @@
             <value n="custom" v="false"/>
             <value n="javaOptions" v=""/>
             <value n="name" v="JmxClient"/>
-            <value n="programArguments" v="service:jmx:iiop://localhost.localdomain:7003/jndi/weblogic.management.mbeanservers.runtime clientonboarding-cache-1.0-SNAPSHOT config.properties"/>
+            <value n="programArguments" v="service:jmx:iiop://localhost.localdomain:7005/jndi/weblogic.management.mbeanservers.runtime clientonboarding-cache-1.0-SNAPSHOT config.properties"/>
             <url n="targetURL" path="src/JmxClient.java"/>
          </hash>
       </hash>
@@ -120,6 +120,10 @@
             <value n="id" v="Wljmxclient.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Coherence.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <hash n="internalDefinitions">
          <list n="libraryDefinitions">
@@ -132,11 +136,24 @@
                <value n="id" v="Wljmxclient.jar"/>
                <value n="locked" v="true"/>
             </hash>
+            <hash>
+               <list n="classPath">
+                  <url protocol="jar" path="file:/u02/oracle/middleware/oracle_home/coherence/lib/coherence.jar!/"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Coherence.jar"/>
+               <value n="id" v="Coherence.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
          </list>
       </hash>
       <list n="libraryReferences">
          <hash>
             <value n="id" v="Wljmxclient.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Coherence.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

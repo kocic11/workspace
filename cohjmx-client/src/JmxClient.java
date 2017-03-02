@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 
 import java.util.HashMap;
@@ -7,6 +8,7 @@ import java.util.Properties;
 import java.util.Set;
 
 import javax.management.MBeanServerConnection;
+import javax.management.MalformedObjectNameException;
 import javax.management.ObjectName;
 import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
@@ -44,32 +46,23 @@ public class JmxClient {
     env.put(JMXConnector.CREDENTIALS, creds);
     env.put(JMXConnectorFactory.PROTOCOL_PROVIDER_PACKAGES, PROTOCOL_PROVIDER_PACKAGES);
     JMXConnector jmxc = JMXConnectorFactory.connect(url, env);
-    
+
     MBeanServerConnection mBeanServerConnection = jmxc.getMBeanServerConnection();
-    String name = new StringBuffer("Coherence:type=Service,name=").append("\"")
-                                                                  .append(appName)
-                                                                  .append(":*\",*")
-                                                                  .toString();
+    System.out.println("Invoking resetStatistics() method on:");
+    String name = new StringBuffer("Coherence:type=*,name=").append("\"")
+                                                            .append(appName)
+                                                            .append(":*\",*")
+                                                            .toString();
 
-    ObjectName serviceInfo = new ObjectName(name);
-    Set<ObjectName> names = mBeanServerConnection.queryNames(serviceInfo, null);
-    if (names == null || names.isEmpty()) {
-      throw new RuntimeException("No services found.");
-    }
+    jmxClient.resetStatistics(mBeanServerConnection, name);
+    
+    name = new StringBuffer("Coherence:type=*,service=").append("\"")
+                                                                .append(appName)
+                                                                .append(":*\",*")
+                                                                .toString();
+    
+    jmxClient.resetStatistics(mBeanServerConnection, name);
 
-    for (ObjectName mbean : names) {
-      boolean running = false;
-      String type = null;
-      try {
-        type = (String) mBeanServerConnection.getAttribute(mbean, "Type");
-        running = (Boolean) mBeanServerConnection.getAttribute(mbean, "Running");
-        if (!running) {
-          throw new RuntimeException(mbean + " is not running");
-        }
-      } finally {
-        System.out.println(mbean + ", Type  = " + type + ", Running = " + running);
-      }
-    }
   }
 
   private Properties getPropValues(String fileName) throws Exception {
@@ -87,5 +80,35 @@ public class JmxClient {
       inputStream.close();
     }
     return prop;
+  }
+
+  private void resetStatistics(MBeanServerConnection mBeanServerConnection, String name) throws IOException,
+                                                                                                       MalformedObjectNameException {
+    ObjectName serviceInfo = ObjectName.getInstance(name);
+    Set<ObjectName> names = mBeanServerConnection.queryNames(serviceInfo, null);
+    if (names == null || names.isEmpty()) {
+      throw new RuntimeException("No services found.");
+    }
+    
+    for (ObjectName mBeanName : names) {
+      boolean running = false;
+      String type = null;
+      try {
+        System.out.println(mBeanName);
+        mBeanServerConnection.invoke(mBeanName, "resetStatistics", null, null);
+
+//        type = (String) mBeanServerConnection.getAttribute(mBeanName, "Type");
+//        running = (Boolean) mBeanServerConnection.getAttribute(mBeanName, "Running");
+//        System.out.println(mBeanName + ", Type  = " + type + ", Running = " + running);
+//        System.out.println(mBeanName + ", Running = " + running);
+      } catch (Exception e) {
+      }
+
+
+      //      if (!running) {
+      //        throw new RuntimeException(mBeanName + " is not running");
+      //      }
+
+    }
   }
 }

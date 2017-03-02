@@ -67,7 +67,7 @@ public class TestCoh {
       cache.putAll(values);
       time += System.currentTimeMillis() - start;
     }
-    System.out.println("Time to put POF object(s): " + time);
+    System.out.println("Time to put object(s): " + time);
   }
 
 }
